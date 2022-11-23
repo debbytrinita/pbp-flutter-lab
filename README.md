@@ -80,3 +80,42 @@ Navigator akan menumpuk halaman menjadi stack. saat dilakukan method push maka h
 3. Menambahkan elemen input dan dropdownbutton pada file form.dart 
 4. Membuat class DataBudget dan listbudget untuk menyimpan data dari form 
 5. Membuat halaman baru (data.dart) dengan menggunakan widget Listview untuk menampilkan data yang telah ditambahkan pada form 
+
+## Tugas 9
+ **Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?**
+ Iya, bisa tetapi hal tersebut tidak lebih baik daripada membuat model terlebih dahulu. Karena akan lebih sulit dan kemungkinan terjadi errornya meningkat. 
+
+ **Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.**
+
+`Drawer`, yaitu widget yang berfungsi untuk menampilkan navigasi menu yang dapat disembunyikan 
+
+`ListTile`, yaitu widget yang membentuk sebuah list yang didalamnya bisa ditambahkan widget lainnya.
+
+`Row`, yaitu widget untuk mengatur tata letak secara horizontal
+
+`Teks`, yaitu widget untuk menambahkan teks dan style
+
+`ListView`, yaitu widget untuk membuat page scrollable secara vertikal
+
+`Expanded`, yaitu widget untuk memperluas child dari row atau columnn sehingga mengisi ruang yang terseedia
+
+`ElevatedButton`, yaitu widget untuk menampilkan buttton
+
+ **Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.**
+
+1. Membuat model dari data json yang mau diambil
+2. Menambahkan dependensi HTTP
+3. Lakukan pengambilan data dari url webservice menggunakan metode http.get
+
+ **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.**
+
+1. Melakukan refactor file dengan membuat dua folder baru bernama model dan page. pindahkan semua file kecuali main.dart kedalam folder page
+2. Membuat model kustom dengan memanfaatkan website Quicktype. Model yang telah dihasilkan dimasukkan ke dalam file baru (watchlist.dart) di dalam folder model yang telah dibuat.
+3. Menambahkan dependensi http
+4. Membuat 2 file baru yaitu mywatchlist.dart dan detailpage.dart di dalam folder page. 
+5. Menambahkan tombol navigasi pada drawer untuk ke halaman mywatchlist
+6. Melakukan fetchdata untuk menampilkan list judul film pada halaman mywatchlist.dart
+7.  Membuat navigasi dari setiap list judul film ke halaman detailpage
+8. Membuat halaman detailpage yang menampilkan judul, release date, rating, review, dan status sesuai dengan judul film yang dipilih 
+
+
