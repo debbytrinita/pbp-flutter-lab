@@ -116,6 +116,6 @@ Navigator akan menumpuk halaman menjadi stack. saat dilakukan method push maka h
 5. Menambahkan tombol navigasi pada drawer untuk ke halaman mywatchlist
 6. Melakukan fetchdata untuk menampilkan list judul film pada halaman mywatchlist.dart
 7.  Membuat navigasi dari setiap list judul film ke halaman detailpage
-8. Membuat halaman detailpage yang menampilkan judul, release date, rating, review, dan status sesuai dengan judul film yang dipilih 
+8. Membuat halaman detailpage yang menampilkan judul, release date, rating, review, dan status sesuai dengan judul film yang dipilih serta button back untuk kembali ke halaman my watchlist
 
 
